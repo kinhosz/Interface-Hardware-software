@@ -82,25 +82,9 @@ limpaTela:
 ret
 
 start:
-	mov bl, 10 ; Seta cor dos caracteres para verde
+	mov bl, 7
 	call limpaTela
 	
-	mov si, str1
-	call printString
-	call printDots
-
-	mov si, str2
-	call printString
-	call printDots
-
-	mov si, str3
-	call printString
-	call printDots
-
-	mov si, str4
-	call printString
-	call printDots
-
 ;Carrega na memoria o kernel
 	xor ax, ax
 	mov ds, ax
